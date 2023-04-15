@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(230, 163, 39);
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+    width: 100%;
+    justify-content: center;
+    padding: .25rem .5rem;
+}
+
+.botones {
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.botones a {
+    background-color: rgb(167, 99, 17);
+    color: #fff;
+    max-width: max-content;
+    padding: .25rem 1rem;
+    row-gap: 1.5rem;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* MAIN */
+
+main {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal h2 {
+    font-size: 1.2rem;
+}
+
+.principal img {
+    max-width: 100%;
+    padding: 1rem .5rem;
+    display: block;
+}
+
+.principal a {
+    padding: .5rem 1rem;
+    background-color: rgb(167, 99, 17);
+    margin-left: .5rem;
+    color: #fff;
+}
+
+.principal p {
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+.contacto h2 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.contacto p {
+    font-weight: lighter;
+    padding: 0 1rem;
+}
+
+.contacto a {
+    background-color: transparent;
+    padding: 0;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(230, 163, 39);
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER CONTACTO */
+
+#contacto {
+    bottom: 0;
+    position: fixed;
+}
