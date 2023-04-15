@@ -61,6 +61,7 @@ main {
 .principal img {
     max-width: 100%;
     padding: 1rem .5rem;
+    display: block;
 }
 
 .principal a {
@@ -104,7 +105,11 @@ footer {
     padding: .5rem;
     text-align: center;
     font-weight: bold;
-    bottom: 0;
-    
+}
 
+/* FOOTER CONTACTO */
+
+#contacto {
+    bottom: 0;
+    position: fixed;
 }
