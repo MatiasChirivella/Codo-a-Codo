@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav, a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(230, 163, 39);
+    display: flex;
+    flex-direction: column;
+    height: 85px;
+    width: 100%;
+    justify-content: center;
+    padding: .25rem .5rem;
+}
+
+.botones {
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.botones a {
+    background-color: rgb(167, 99, 17);
+    color: #fff;
+    max-width: max-content;
+    padding: .25rem 1rem;
+    row-gap: 1.5rem;
+}
+
+.titulo {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* MAIN */
+
+main {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal h2 {
+    font-size: 1.2rem;
+}
+
+.principal img {
+    max-width: 100%;
+    padding: 1rem .5rem;
+    display: block;
+}
+
+.principal a {
+    padding: .5rem 1rem;
+    background-color: rgb(167, 99, 17);
+    margin-left: .5rem;
+    color: #fff;
+}
+
+.principal p {
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+.contacto h2 {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+.contacto p {
+    font-weight: lighter;
+    padding: 0 1rem;
+}
+
+.contacto a {
+    background-color: transparent;
+    padding: 0;
+    color: blue;
+    text-decoration: underline;
+}
+
+.tablas {
+    padding: 1.25rem .5rem;
+}
+
+.tablas table {
+    margin: 1rem .5rem;
+    
+    background-color:  rgb(255, 204, 141);
+    border: 2px solid black;
+}
+
+.tablas th, tr, td {
+    border: 1px solid black;
+    padding: .25rem .25rem;
+}
+
+.listas {
+    padding: 0 .5rem;
+}
+
+.listas h3 {
+    padding-bottom: 1rem;
+}
+
+#formularios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 25%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: rgb(243, 210, 148);
+}
+
+#formularios h2 {
+    padding-bottom: 1rem;
+}
+
+#formularios section {
+    display: block;
+    padding: .5rem 0;
+}
+
+.sucursales {
+    margin: 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.sucursales p {
+    padding: .5rem .5rem;
+    font-weight: bold;
+}
+
+.sucursales a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.iframes {
+    margin: 0 1rem;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.iframes iframe {
+    width: 22%;
+}
+
+
+
+/* FOOTER */ 
+footer {
+    background-color: rgb(230, 163, 39);
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER CONTACTO */
+
+#contacto {
+    bottom: 0;
+    position: fixed;
+}
