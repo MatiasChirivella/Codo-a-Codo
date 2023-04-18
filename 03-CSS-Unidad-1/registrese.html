@@ -30,47 +30,101 @@
         <section id="formularios">
             <h2>Formulario de registro</h2>
             <form action="Link" method="get" target="_blank">
-                <section class="nombre">
-                    <label for="name" class="grupo">Nombre: </label>
-                    <input type="text" name="name" id="name" required placeholder="Ingrese su nombre aqui.." class="grupo">
+                <section id="personal">
+                    <section class="nombre">
+                        <label for="name" class="grupo">Nombre: </label>
+                        <input type="text" name="name" id="name" required placeholder="Ingrese su nombre aqui.." class="grupo">
+                    </section>
+
+                    <section class="apellido">
+                        <label for="lastname">Apellido: </label>
+                        <input type="text" name="lastname" id="lastname" required placeholder="Ingrese su apellido aqui..">
+                    </section>
                 </section>
 
-                <section class="apellido">
-                    <label for="lastname">Apellido: </label>
-                    <input type="text" name="lastname" id="lastname" required placeholder="Ingrese su apellido aqui..">
+                <section id="direccion">
+                <fieldset>
+                    <legend>Direccion: </legend>
+                    
+                    <label for="adress">Calle: </label>
+                    <input type="text" name="adress" id="adress" required placeholder="Ingrese su calle aqui..">
+
+                    <label for="number">Numero: </label>
+                    <input type="number" name="number" id="number" maxlength="6" placeholder="Ingrese el numero..">
+
+                    <label for="city">Ciudad: </label>
+                    <input type="text" name="city" id="city" value="C.A.B.A">
+
+                    <label for="cp">Codigo Postal: </label>
+                    <input type="number" name="cp" id="cp" placeholder="Ingrese su codigo postal aqui..">
+                </fieldset>
                 </section>
 
-                <section class="direccion">
-                    <label for="adress">Direccion: </label>
-                    <input type="text" name="adress" id="adress" required placeholder="Ingrese su direccion aqui..">
-                </section>
+                <section id="telefono">
+                    <section class="telefono">
+                        <label for="phone">Telefono: </label>
+                        <input type="number" name="phone" id="phone" placeholder="Ingrese su telefono aqui..">
+                    </section>
 
-                <section class="fecha">
-                    <label for="born">Fecha de Nacimiento (mm/dd/yyyy): </label>
-                    <input type="date" name="born" id="born">
+                    <section class="fecha">
+                        <label for="born">Fecha de Nacimiento (mm/dd/yyyy): </label>
+                        <input type="date" name="born" id="born">
+                    </section>
+
+                    <section class="mail">
+                        <label for="email">Mail: </label>
+                        <input type="email" name="email" id="email">
+                    </section>
+
+                    <section class="password">
+                        <label for="password">Clave: </label>
+                        <input type="password" name="password" id="password">
+                    </section>
+
+                    <section class="url">
+                        <label for="url">Link del TP 3: </label>
+                        <input type="url" name="url" id="url">
+                    </section>
                 </section>
 
                 <section class="genero">
                     <label for="gender">Genero</label>
-                    <input type="radio" name="gender" id="masculine">Hombre
+                    <input type="radio" name="gender" id="masculine" checked>Hombre
                     <input type="radio" name="gender" id="femenine">Mujer
                     <input type="radio" name="gender" id="another">Otro
                 </section>
 
-                <section class="estudios">
-                    <label for="study">Estudios: </label>
-                    <input type="checkbox" name="study" id="study">Primarios
-                    <input type="checkbox" name="study" id="study">Secundarios
-                    <input type="checkbox" name="study" id="study">Terciarios
-                    <input type="checkbox" name="study" id="study">Universitarios
-                    <input type="checkbox" name="study" id="study">Otros
+                <section class="conocimientos">
+                    <label for="study">Conocimientos previos: </label>
+                    <input type="checkbox" name="study" id="study">HTML
+                    <input type="checkbox" name="study" id="study">CSS
+                    <input type="checkbox" name="study" id="study">Bootstrap
+                    <input type="checkbox" name="study" id="study">Javascript
+                    <input type="checkbox" name="study" id="study">Typescript
+                    <input type="checkbox" name="study" id="study">Angular
+                    <input type="checkbox" name="study" id="study">Base de Datos
+                    <input type="checkbox" name="study" id="study">Python
+                    <input type="checkbox" name="study" id="study">Django
                 </section>
 
+                <section class="estudios">
+                    <label for="select">Estudios: </label>
+                    <select name="select" id="select">
+                        <option value="primaria">Primaria</option>
+                        <option value="secundario">Secundario</option>
+                        <option value="terciario">Terciario</option>
+                        <option value="universitario">Universitario</option>
+                    </select>
+                </section>
+
+                <section class="comentarios">
+                    <label for="comentarios">Comentarios: </label>
+                    <textarea name="comentarios" id="comentarios" cols="20" rows="5"></textarea>
+                </section>
+                
                 <section class="enviar">
                     <input type="submit" value="Enviar">
                 </section>
-                
-                <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html".</p>
             </form>
         </section>
     </main>
