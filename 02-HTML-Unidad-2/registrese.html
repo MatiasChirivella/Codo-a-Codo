@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La cocina de Juan</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/5e2fa57470.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <section class="header botones">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./acercade.html">Acerca de</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./registrese.html">Registrese</a>
+                <a href="./sucursales.html">Sucursales</a>
+            </nav>
+        </section>
+
+        <section class="header titulo">
+            <h1>La cocina de Juan</h1>
+        </section>
+    </header>
+
+    <main>
+        <section id="formularios">
+            <h2>Formulario de registro</h2>
+            <form action="Link" method="get" target="_blank">
+                <section class="nombre">
+                    <label for="name" class="grupo">Nombre: </label>
+                    <input type="text" name="name" id="name" required placeholder="Ingrese su nombre aqui.." class="grupo">
+                </section>
+
+                <section class="apellido">
+                    <label for="lastname">Apellido: </label>
+                    <input type="text" name="lastname" id="lastname" required placeholder="Ingrese su apellido aqui..">
+                </section>
+
+                <section class="direccion">
+                    <label for="adress">Direccion: </label>
+                    <input type="text" name="adress" id="adress" required placeholder="Ingrese su direccion aqui..">
+                </section>
+
+                <section class="fecha">
+                    <label for="born">Fecha de Nacimiento (mm/dd/yyyy): </label>
+                    <input type="date" name="born" id="born">
+                </section>
+
+                <section class="genero">
+                    <label for="gender">Genero</label>
+                    <input type="radio" name="gender" id="masculine">Hombre
+                    <input type="radio" name="gender" id="femenine">Mujer
+                    <input type="radio" name="gender" id="another">Otro
+                </section>
+
+                <section class="estudios">
+                    <label for="study">Estudios: </label>
+                    <input type="checkbox" name="study" id="study">Primarios
+                    <input type="checkbox" name="study" id="study">Secundarios
+                    <input type="checkbox" name="study" id="study">Terciarios
+                    <input type="checkbox" name="study" id="study">Universitarios
+                    <input type="checkbox" name="study" id="study">Otros
+                </section>
+
+                <section class="enviar">
+                    <input type="submit" value="Enviar">
+                </section>
+                
+                <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html".</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav id="redes">
+            <a href="#" class="redes" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="redes" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="redes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="redes" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="redes" target="_blank"><i class="fa-brands fa-pinterest"></i></a>  
+          </nav>
+        <p>Derechos reservados @2020</p>
+    </footer>
+
+</body>
+</html>
