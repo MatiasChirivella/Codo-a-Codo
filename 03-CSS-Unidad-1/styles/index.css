@@ -120,22 +120,43 @@ main {
 }
 
 #formularios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 2rem 25%;
-    padding: 1rem;
+    padding:0 1rem;
+    border: 2px solid red;
+    font-size: 0.7rem;
+}
+
+#formularios fieldset {
+    padding: 0;
+    border: none;
 }
 
 #formularios h2 {
-    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
 }
 
-#formularios section {
-    display: block;
+#personal, 
+#telefono,
+#genero, 
+#conocimientos, 
+#estudios, 
+#comentarios {
+    display: flex;
+    flex-direction: row;
     padding: .5rem 0;
+    border: 2px solid blue;
+    column-gap: .2rem;
+}
+
+#direccion,
+legend {
+    padding-bottom: .5rem 0;
+}
+
+
+label,
+input {
+    padding: 0 .15rem;
 }
 
 .sucursales {
