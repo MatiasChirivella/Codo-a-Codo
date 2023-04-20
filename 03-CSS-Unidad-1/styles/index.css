@@ -121,7 +121,6 @@ main {
 
 #formularios {
     padding:0 1rem;
-    border: 2px solid red;
     font-size: 0.7rem;
 }
 
@@ -144,8 +143,23 @@ main {
     display: flex;
     flex-direction: row;
     padding: .5rem 0;
-    border: 2px solid blue;
     column-gap: .2rem;
+}
+
+#direccion {
+    padding: .5rem 0;
+}
+
+#direccion legend {
+    padding-bottom: .5rem;
+}
+
+#estudios{
+    align-items: center;
+}
+
+#comentarios {
+    display: block;
 }
 
 #direccion,
@@ -207,7 +221,9 @@ footer a {
 
 /* FOOTER CONTACTO */
 
-#contacto {
+#contacto,
+#registrese {
     bottom: 0;
     position: fixed;
 }
+
