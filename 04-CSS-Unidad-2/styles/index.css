@@ -119,9 +119,14 @@ main {
     padding-bottom: 1rem;
 }
 
+/* FORMULARIOS */
+
 #formularios {
-    padding:0 1rem;
-    font-size: 0.7rem;
+    margin: 3% 30%;
+    padding:2rem 2rem;
+    font-size: 1.2rem;
+    background-color: #e4e0e0;
+    border-radius: 1rem;
 }
 
 #formularios fieldset {
@@ -141,7 +146,7 @@ main {
 #estudios, 
 #comentarios {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: .5rem 0;
     column-gap: .2rem;
 }
@@ -162,15 +167,22 @@ main {
     display: block;
 }
 
-#direccion,
-legend {
+#direccion legend {
     padding-bottom: .5rem 0;
+    display: none;
 }
 
 
 label,
 input {
-    padding: 0 .15rem;
+    margin: .3rem 0;
+    padding: .6rem .15rem;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: .25rem;
 }
 
 .sucursales {
@@ -221,8 +233,7 @@ footer a {
 
 /* FOOTER CONTACTO */
 
-#contacto,
-#registrese {
+#contacto {
     bottom: 0;
     position: fixed;
 }
